@@ -1,0 +1,35 @@
+.no-top-borders{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.cardd{
+    border-bottom-left-radius: 0px !important;
+}
+.spacer{
+    height: 20px;;
+}
+.bigspacer{
+    height: 150px;
+}
+.vertical-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+.giant{
+    font-size: 90px;
+}
+*{
+    font-family: Dosis;
+}
+.btn-dark{
+    background-color: #916a7c;
+    border: none;
+}
+.btn-dark:hover{
+    background-color: #D3B3C2;
+}
+.disabled{
+    background-color: #46383f;
+}
