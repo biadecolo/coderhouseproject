@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <div class="container">
@@ -55,25 +56,26 @@
             <div class="col-md-7">
                 <div class="bigspacer"></div>
                 <h1 class="giant">Procurando um <b>au</b>migo?</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, corporis quia harum deserunt numquam unde sunt repellat ratione pariatur ea atque dignissimos est perferendis nihil reiciendis voluptas nisi beatae impedit.</p>
+                <p>Adotar um pet não é apenas um ato de compaixão, é a chance de abrir as portas do seu lar para um amor incondicional e transbordante. É trocar lambidas por carinho, brincadeiras por momentos inesquecíveis e fidelidade por um laço que dura a vida toda.</p>
                 <div class="bigspacer"></div>
             </div>
             <div class="col-md-5">
-                <img src="assets/Group 7.png" alt="">
+                <img src="assets/Group 7.png" alt="" class="animate__animated animate__fadeIn">
             </div>
         </div>
         <div class="spacer"></div><div class="spacer"></div>
         <div class="row" id="sobre">
             <div class="col-md-3">
-                <img src="assets/sobre.png" alt="" style="max-width: 100%;">
+                <img src="assets/sobre.png" alt="" style="max-width: 100%;" class="animate__animated animate__slideInLeft">
             </div>
             <div class="col-md-9">
                 <h1>Sobre nós</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae corrupti qui, vel, saepe ea ipsa perferendis voluptate fugit officiis dignissimos obcaecati porro quaerat nam magnam! Repudiandae esse eaque consequatur dolores?
-                <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt excepturi nesciunt minima ipsa fugiat. Dolores, distinctio! Ullam soluta recusandae tempore beatae voluptatibus facilis repellat, commodi explicabo nam totam. Aspernatur, earum!
-                <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt excepturi nesciunt minima ipsa fugiat. Dolores, distinctio! Ullam soluta recusandae tempore beatae voluptatibus facilis repellat, commodi explicabo nam totam. Aspernatur, earum!
-                <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt excepturi nesciunt minima ipsa fugiat. Dolores, distinctio! Ullam soluta recusandae tempore beatae voluptatibus facilis repellat, commodi explicabo nam totam. Aspernatur, earum!
-                </p>
+                <p>Em um mundo onde tantos animais são abandonados ou vivem em situação de risco, o Patas Dadas surge como um farol de esperança. Mais do que um simples site de adoção de pets, o Patas Dadas é um projeto idealizado por um grupo de apaixonados por animais que tem como missão principal:</p>
+                <p>Ao adotar um pet no Patas Dadas, você estará não apenas ganhando um novo melhor amigo, mas também estará contribuindo para a construção de um mundo mais justo e compassivo para todos os animais.</p>
+                <p><b>Com o Patas Dadas, você pode:</b></p>
+                <p><li>Encontrar lares amorosos e permanentes para cães e gatos abandonados ou em situação de risco. <br></li> 
+                    <li>Promover a adoção responsável, conscientizando as pessoas sobre os cuidados e responsabilidades que envolvem ter um animal de estimação. <br></li>
+                    <li>Combater o abandono e maus-tratos contra animais, através de campanhas de conscientização e ações educativas.</p></li>
             </div>
         </div>
         <div class="bigspacer"></div>
@@ -124,7 +126,7 @@
                       <div class="col-md-8">
                         <div class="card-body">
                           <h5 class="card-title">Padre Fábio de Melo</h5>
-                          <p class="card-text">Um gatinho reservado e aparentemente religioso?</p>
+                          <p class="card-text">Sim, o pessoal aqui é bem criativo.</p>
                           <p class="card-text"><small class="text-muted">🐈 Felino | Aprox. 5 anos</small></p>
                           
                         </div>
@@ -153,7 +155,7 @@
                           
                         </div>
                       </div>
-                      <button class="btn btn-dark btn-full no-top-borders">Quero adotar</button>
+                      <a class="btn btn-dark btn-full no-top-borders" href="bento.html">Quero adotar</a>
                     </div>
                   </div>
             </div>
@@ -171,7 +173,7 @@
                           
                         </div>
                       </div>
-                      <button class="btn btn-dark btn-full no-top-borders disabled">Já foi adotado</button>
+                      <button class="btn btn-dark btn-full no-top-borders disabled" id="popover" data-trigger="hover"  data-bs-content="Some content inside the popover">Já foi adotado</button>
                     </div>
                   </div>
             </div>
@@ -189,7 +191,7 @@
                           
                         </div>
                       </div>
-                      <button class="btn btn-dark btn-full no-top-borders">Quero adotar</button>
+                      <a class="btn btn-dark btn-full no-top-borders" href="torresmo.html">Quero adotar</a>
                     </div>
                   </div>
             </div>
@@ -212,6 +214,15 @@
         <small>Todos os direitos reservados &copy; Projeto Patas Dadas</small>
       </div>
     </footer>
+    
+    
   </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js" integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script>
+        $("#popover").popover({ trigger: "hover" });
+
+    </script>
 </html>
